@@ -1,10 +1,10 @@
- function GetJsonFromUrl(anyUrl){
+   let GetJsonFromUrl =  anyUrl => {
         var Httpreq = new XMLHttpRequest(); // a new request
         Httpreq.open("GET",anyUrl,false);
         Httpreq.send(null);
         return Httpreq.responseText;          
     }
-    function displayJsonData(JsonObject){
+    let displayJsonData = JsonObject =>{
        
        // var obj = JSON.parse(localStorage.getItem('myStorage2'));
         var URL_JSON_DATA=[];
@@ -15,7 +15,7 @@
         //         Httpreq.send(null);
         //         return H9tfffffffffffffffffffffffffffffffffffffttpreq.responseText;          
         //     }
-             for(let i=0;i<10;i++){
+             for(let i=0;i<20;i++){
                  URL_JSON_DATA[i] = JSON.parse(GetJsonFromUrl("https://hacker-news.firebaseio.com/v0/item/"+JsonObject[i]+".json?print=pretty"));
             }
             var tableString = "<table border=1px class='redTable'>",
