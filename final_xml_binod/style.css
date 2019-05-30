@@ -1,0 +1,33 @@
+th{
+  background-color: white;
+}
+table.redTable {
+  border: 1px solid #1C6EA4;
+  background-color: gray;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.redTable td, table.blueTable th {
+  border: 1px solid red;
+  padding: 3px 2px;
+}
+table.redTable tbody td {
+  font-size: 13px;
+}
+table.redTable tr:nth-child(even) {
+  background: red;
+}
+table.redTable tfoot td {
+  font-size: 14px;
+}
+table.redTable tfoot .links {
+  text-align: right;
+}
+table.redTable tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
